@@ -1,19 +1,16 @@
-# ChatGPT Assignment
+# Designing and building a Wordle Game in JavaFX only using code snippets from ChatGPT
 
-# Creating a Wordle Game in JavaFX only with code snippets from ChatGPT
 
-# 👩🏻‍💻
 
-# 💬
+# <a href="https://lynjeong.notion.site/ChatGPT-Assignment-dacc2e8bf12848c8a5db040a214680be">Notion Link (Better Format)</a>
 
-Human written prompts
-
-ChatGPT Response
+### 👩🏻‍💻: Human written prompts <br><br> 
+💬: ChatGPT Response
 
 # 1.
 
 <aside>
-👩🏻‍💻 What do I do if I want to make a javafx  wordle game?
+👩🏻‍💻 What do I do if I want to make a javafx  wordle game? <br><br>
 
 </aside>
 
@@ -35,16 +32,14 @@ You can also look for pre-built open source JavaFX wordle game or similar games,
 # 2.
 
 <aside>
-👩🏻‍💻 Can you give me the basic layout of the wordle game? 
+👩🏻‍💻 Can you give me the basic layout of the wordle game?  <br><br>
 
 One textfield where it only takes 5 letter word and a counter where it counts how many tries user took and a random 5 letter word generator.
 
 </aside>
 
 <aside>
-💬
-
-Sure, here is a basic layout for a JavaFX Wordle game:
+💬 Sure, here is a basic layout for a JavaFX Wordle game:
 
 1. A TextField for the user to input their 5 letter word guess. You can set the max length of the TextField to 5 using the setMaxLength() method.
 2. A Label or TextField to display the randomly generated 5 letter word.
@@ -99,7 +94,7 @@ Also, you should generate a random word by using Java's built-in Random class an
 # 3.
 
 <aside>
-👩🏻‍💻 The program does not display anything.
+👩🏻‍💻 The program does not display anything. <br><br>
 
 </aside>
 
@@ -254,7 +249,7 @@ You can use this event to perform some action like validating the input, submitt
 # 7.
 
 <aside>
-👩🏻‍💻 How do I restrict textfield to only accept a 5 letter word?
+👩🏻‍💻 How do I restrict textfield to only accept a 5 letter word? <br><br>
 
 </aside>
 
@@ -306,7 +301,7 @@ It's also good to provide feedback to the user, like showing an error message or
 # 8.
 
 <aside>
-👩🏻‍💻 I want the scoreLabel to display the number of chances the player have left. It would go down every time the submit button is clicked and when it reaches 0 it will end the game.
+👩🏻‍💻 I want the scoreLabel to display the number of chances the player have left. It would go down every time the submit button is clicked and when it reaches 0 it will end the game. <br><br>
 
 </aside>
 
@@ -349,7 +344,7 @@ Please note that this is a simple example and you may want to add more features 
 # 9.
 
 <aside>
-👩🏻‍💻 I want the program to randomly generate a 5 letter word and add a functionality to check if the input word is correct or not. I also want to display a message dialog when the game is over or the player gets a correct answer.
+👩🏻‍💻 I want the program to randomly generate a 5 letter word and add a functionality to check if the input word is correct or not. I also want to display a message dialog when the game is over or the player gets a correct answer. <br><br>
 
 </aside>
 
@@ -396,7 +391,7 @@ submitButton.setOnAction(new EventHandler<ActionEvent>() {
 # 10.
 
 <aside>
-👩🏻‍💻 ActionEvent cannot be resolved to a typeJava(16777218)
+👩🏻‍💻 ActionEvent cannot be resolved to a typeJava(16777218) <br><br>
 
 </aside>
 
@@ -438,7 +433,7 @@ Let me know if there's anything else I could help you with.
 # 11.
 
 <aside>
-👩🏻‍💻 The type EventHandler is not generic; it cannot be parameterized with arguments <ActionEvent>Java(16777740)
+👩🏻‍💻 The type EventHandler is not generic; it cannot be parameterized with arguments <ActionEvent>Java(16777740) <br><br>
 
 </aside>
 
@@ -476,7 +471,7 @@ Please let me know if there's anything else I could help you with.
 # 12.
 
 <aside>
-👩🏻‍💻 Type safety: The expression of type new EventHandler(){} needs unchecked conversion to conform to EventHandler<ActionEvent>Java(16777748)
+👩🏻‍💻 Type safety: The expression of type new EventHandler(){} needs unchecked conversion to conform to EventHandler<ActionEvent>Java(16777748) <br><br>
 
 </aside>
 
@@ -530,7 +525,7 @@ Please let me know if there's anything else I could help you with.
 # 13.
 
 <aside>
-👩🏻‍💻 How do i update the chancesLeft variable?
+👩🏻‍💻 How do i update the chancesLeft variable? <br><br>
 
 </aside>
 
@@ -573,7 +568,7 @@ Also, I added an if statement to check if the chancesLeft equals to zero and if 
 # 14.
 
 <aside>
-👩🏻‍💻 What do i do to the new word button?
+👩🏻‍💻 What do i do to the new word button? <br><br>
 
 </aside>
 
@@ -618,7 +613,7 @@ Please let me know if there's anything else I could help you with.
 # 15.
 
 <aside>
-👩🏻‍💻 How can I give the user to restart the game after they get it correct or use all their chances?
+👩🏻‍💻 How can I give the user to restart the game after they get it correct or use all their chances? <br><br>
 
 </aside>
 
@@ -684,7 +679,7 @@ Please let me know if there's anything else I could help you with.
 # 16.
 
 <aside>
-👩🏻‍💻 How do I make the game restart when the player clicks the OK button in the alert?
+👩🏻‍💻 How do I make the game restart when the player clicks the OK button in the alert? <br><br>
 
 </aside>
 
@@ -737,7 +732,7 @@ Please let me know if there's anything else I could help you with.
 # 17.
 
 <aside>
-👩🏻‍💻 The code above does not automatically restart the game.
+👩🏻‍💻 The code above does not automatically restart the game. <br><br>
 
 </aside>
 
@@ -782,7 +777,7 @@ Please let me know if there's anything else I could help you with.
 # 18.
 
 <aside>
-👩🏻‍💻 The method getButton(ButtonType) is undefined for the type AlertJava(67108964)
+👩🏻‍💻 The method getButton(ButtonType) is undefined for the type AlertJava(67108964) <br><br>
 
 </aside>
 
@@ -829,7 +824,7 @@ Please let me know if there's anything else I could help you with.
 # 19.
 
 <aside>
-👩🏻‍💻 Lambda expression's parameter event cannot redeclare another local variable defined in an enclosing scope. Java(536871009)
+👩🏻‍💻 Lambda expression's parameter event cannot redeclare another local variable defined in an enclosing scope. Java(536871009) <br><br>
 
 </aside>
 
@@ -874,7 +869,7 @@ Please let me know if there's anything else I could help you with.
 # 20.
 
 <aside>
-👩🏻‍💻 It still does not  automatically restart.
+👩🏻‍💻 It still does not  automatically restart. <br><br>
 
 </aside>
 
@@ -920,7 +915,7 @@ Please let me know if there's anything else I could help you with.
 # 21.
 
 <aside>
-👩🏻‍💻 Can the enter key be pressed to do the same thing as the submit button?
+👩🏻‍💻 Can the enter key be pressed to do the same thing as the submit button? <br><br>
 
 </aside>
 
@@ -946,7 +941,7 @@ Please let me know if there's anything else I could help you with.
 # 22.
 
 <aside>
-👩🏻‍💻 How can you only allow 5 letter words from the player?
+👩🏻‍💻 How can you only allow 5 letter words from the player? <br><br>
 
 </aside>
 
@@ -984,7 +979,7 @@ Please let me know if there's anything else I could help you with.
 # 23.
 
 <aside>
-👩🏻‍💻 How can I send a notification when the user enters less than 5 letters?
+👩🏻‍💻 How can I send a notification when the user enters less than 5 letters? <br><br>
 
 </aside>
 
@@ -1016,7 +1011,7 @@ Alternatively, you could use a message dialog, the following code will show a me
 # 24.
 
 <aside>
-👩🏻‍💻 It still allows user to hit the submit button when there are less than 5 letters in the textfield.
+👩🏻‍💻 It still allows user to hit the submit button when there are less than 5 letters in the textfield. <br><br>
 
 </aside>
 
@@ -1068,7 +1063,7 @@ Please let me know if there's anything else I could help you with.
 # 25.
 
 <aside>
-👩🏻‍💻 Can I have a longer list of 5 letter words for String[] words?
+👩🏻‍💻 Can I have a longer list of 5 letter words for String[] words? <br><br>
 
 </aside>
 
@@ -1088,7 +1083,7 @@ You can add or remove words as you see fit. Keep in mind that all the words shou
 # 26.
 
 <aside>
-👩🏻‍💻 Add comments and javadocs to the code:
+👩🏻‍💻 Add comments and javadocs to the code: <br><br>
 
 </aside>
 
