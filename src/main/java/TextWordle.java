@@ -22,7 +22,26 @@ public class TextWordle extends Application {
     int chancesLeft = 6; // Number of chances left for the player
     int randomIndex; // Index of the randomly selected word
     String randomWord; // The randomly selected word
-    String[] words = {"apple", "table", "water", "green", "happy"}; // List of words to choose from
+    String[] words = {"apple", "table", "water", "green",   // List of words to choose from
+                      "happy", "lemon", "storm", "smile", 
+                      "ocean", "puzzle", "flower", "bloom", 
+                      "sheep", "mouse", "peace", "stone", 
+                      "watch", "swift", "yacht", "light", 
+                      "beach", "blond", "bunch", "cloud", 
+                      "crush", "dawns", "dwarf", "fable", 
+                      "folly", "giant", "grasp", "heart", 
+                      "hatch", "hilly", "hurry", "jolly", 
+                      "jumbo", "kneel", "latch", "leapt", 
+                      "lucky", "lyric", "misty", "moony", 
+                      "myth", "nimble", "nurse", "petal", 
+                      "punch", "quilt", "quirk", "quizz", 
+                      "rapid", "rebel", "reign", "rusty", 
+                      "scuba", "seize", "shank", "slate", 
+                      "sleek", "slink", "slate", "smile", 
+                      "smirk", "smoky", "spend", "spicy", 
+                      "spoon", "spurs", "squad", "squid", 
+                      "stale", "steep", "sting", "stork", 
+                      "swoop", "tulip"}; 
     
     public static void main(String[] args) {
         launch(args);
