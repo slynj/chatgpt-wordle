@@ -13,11 +13,16 @@ import javafx.stage.Stage;
 import java.util.Random;
 
 
+/**
+ * TextWordle is a JavaFX application that implements a simple word guessing game.
+ * The game randomly selects a word from a predefined list of words and the player
+ * has to guess the word in 6 chances.
+ */
 public class TextWordle extends Application {
-    int chancesLeft = 6;
-    int randomIndex;
-    String randomWord;
-    String[] words = {"apple", "table", "water", "green", "happy"};
+    int chancesLeft = 6; // Number of chances left for the player
+    int randomIndex; // Index of the randomly selected word
+    String randomWord; // The randomly selected word
+    String[] words = {"apple", "table", "water", "green", "happy"}; // List of words to choose from
     
     public static void main(String[] args) {
         launch(args);
@@ -30,14 +35,15 @@ public class TextWordle extends Application {
         randomWord = words[randomIndex];
 
         GridPane root = new GridPane();
-        root.setHgap(10);
-        root.setVgap(10);
-        root.setPadding(new Insets(10));
+        root.setHgap(10); // horizontal gap between elements
+        root.setVgap(10); // vertical gap between elements
+        root.setPadding(new Insets(10)); // padding around the grid
         
-
+        // Label for displaying the word to guess
         Label wordLabel = new Label("Word:");
         root.add(wordLabel, 0, 0);
 
+        // Text field for inputting the guess
         TextField wordField = new TextField();
         wordField.setPrefSize(100, 20);
         wordField.setEditable(true);
@@ -56,15 +62,20 @@ public class TextWordle extends Application {
             }
         });
 
-
         root.add(wordField, 1, 0);
 
+        // Label for displaying the number of chances left
         Label scoreLabel = new Label("Chances left: " + chancesLeft);
         root.add(scoreLabel, 0, 1);
 
+        // Button for getting a new word
         Button newWordButton = new Button("New Word");
+        root.add(newWordButton, 2, 1);
+        // Button for submitting the guess
         Button submitButton = new Button("Submit");
+        root.add(submitButton, 1, 1);
 
+        // Action Listener for the new word button
         newWordButton.setOnAction(event -> {
             randomIndex = random.nextInt(words.length);
             randomWord = words[randomIndex];
@@ -74,9 +85,7 @@ public class TextWordle extends Application {
             submitButton.setDisable(false);
         });
         
-        root.add(newWordButton, 2, 1);
-
-        
+        // Action Listener for the submit button
         submitButton.setOnAction(event -> {
             String inputWord = wordField.getText();
             if (inputWord.length() < 5) {
@@ -109,25 +118,20 @@ public class TextWordle extends Application {
                 }
             }
         });
-        
-  
-        
-        root.add(submitButton, 1, 1);
-
-        
 
         Scene scene = new Scene(root);
         Stage stage = new Stage();
 
+        // Add event filter to handle enter key press
         scene.addEventFilter(KeyEvent.KEY_PRESSED, event -> {
             if (event.getCode() == KeyCode.ENTER) {
                 submitButton.fire();
             }
         });
 
-        
         stage.setScene(scene);
         stage.setTitle("Wordle Game");
         stage.show();
     }
 }
+
