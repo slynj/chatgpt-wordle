@@ -28,6 +28,8 @@
       <artifactId>javafx-fxml</artifactId>
       <version>${javafx.version}</version>
   </dependency>
+  
+
   </dependencies>
   <build>
     <plugins>
@@ -36,7 +38,7 @@
         <artifactId>javafx-maven-plugin</artifactId>
         <version>${javafx.maven.plugin.version}</version>
         <configuration>
-          <mainClass>App</mainClass>
+          <mainClass>TextWordle</mainClass>
         </configuration>
       </plugin>
     </plugins>
