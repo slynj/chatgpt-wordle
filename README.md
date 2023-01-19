@@ -4,8 +4,7 @@
 
 # <a href="https://lynjeong.notion.site/ChatGPT-Assignment-dacc2e8bf12848c8a5db040a214680be">Notion Link (Better Format)</a>
 
-### 👩🏻‍💻: Human written prompts <br><br> 
-💬: ChatGPT Response
+### 👩🏻‍💻: Human written prompts <br><br> 💬: ChatGPT Response
 
 # 1.
 
