@@ -127,6 +127,7 @@ public class TextWordle extends Application {
 
         
         stage.setScene(scene);
+        stage.setTitle("Wordle Game");
         stage.show();
     }
 }
